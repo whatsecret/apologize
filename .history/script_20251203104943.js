@@ -1,7 +1,7 @@
-// const preloadImages = ['shocked.png', 'think.png', 'angry.png', 'crying.png'];
-// preloadImages.forEach(img => {
-//   new Image().src = `./images/${img}`;
-// });
+const preloadImages = ['shocked.png', 'think.png', 'angry.png', 'crying.png'];
+preloadImages.forEach(img => {
+  new Image().src = `./images/${img}`;
+});
 let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
@@ -44,7 +44,7 @@ noButton.addEventListener("click", function() {
     if (clickCount === 1) mainImage.src = "images/1.gif"; // 震惊
     if (clickCount === 2) mainImage.src = "images/2.gif";   // 思考
     if (clickCount === 3) mainImage.src = "images/3.gif";   // 生气
-    if (clickCount === 4) mainImage.src = "images/7.gif";  // 哭
+    if (clickCount === 4) mainImage.src = "images/5.gif";  // 哭
     if (clickCount >= 5) mainImage.src = "images/4.gif";  // 之后一直是哭
 
 });
@@ -53,8 +53,8 @@ noButton.addEventListener("click", function() {
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
-            <h1 class="yes-text">!!!爱你!!! ( >᎑<)♡︎ᐝ</h1>
-            <img src="images/9.gif" alt="拥抱" class="yes-image">
+            <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
+            <img src="images/hug.png" alt="拥抱" class="yes-image">
         </div>
     `;
 
